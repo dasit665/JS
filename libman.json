@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "bootstrap-formhelpers@2.3.0",
+      "destination": "wwwroot/bootstrap-formhelpers/"
+    }
+  ]
+}
