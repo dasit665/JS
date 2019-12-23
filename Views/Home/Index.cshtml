@@ -4,4 +4,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h4>Hello world</h4>
+<div class="main-form">
+    <form name="MainForm">
+        <div class="id-field"><label>ID:</label><input type="text" name="ID" required autocomplete="off"/></div>
+        <div class="name-field"><label>Name:</label><input type="text" name="Name" required autocomplete="off"/></div>
+        <button id="get" type="button">Get</button>
+        <button id="getAsync" type="button">GetAsync</button>
+        <button id="post" type="button">Post</button>
+        <button id="postAsync" type="button">PostAsync</button>
+    </form>
+</div>
