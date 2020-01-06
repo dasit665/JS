@@ -1,25 +1,15 @@
-﻿let modalWindow =
-    [
-        document.querySelector(".modalWrap"),
-        document.querySelector(".modalWindow")
-    ];
+﻿let modalWindow = document.querySelector(".modalWrap");
 
 function CloseModalWindow()
 {
-    modalWindow.forEach((el) =>
-    {
-        el.classList.add("hide");
-    });
+    modalWindow.classList.add("hide");
 
     addEventListener("keydown", null);
 }
 
 function ShowModalWindow()
 {
-    modalWindow.forEach((el) =>
-    {
-        el.classList.remove("hide");
-    });
+    modalWindow.classList.remove("hide");
 
     addEventListener("keydown", (e) =>
     {
@@ -53,11 +43,3 @@ document.querySelector(".modalWrap").onclick = (e) =>
         return false;
     }
 };
-
-addEventListener("keydown", (e) =>
-{
-    if (e.key == "Escape")
-    {
-        CloseModalWindow();
-    }
-})
